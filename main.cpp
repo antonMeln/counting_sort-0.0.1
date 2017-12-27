@@ -35,9 +35,9 @@ void CountingSort(int *a,  int n)
 }
 int main()
 {  
-    int *a= new int;
     
     int n,i;
+    int *a= new int[n];
     string str;
     getline(cin,str);
     istringstream stream(str);
@@ -52,5 +52,7 @@ int main()
       }  
       else cout <<"An error has occurred while reading numbers";
     } 
+    delete[] a;
    return 0;
+   
 }
